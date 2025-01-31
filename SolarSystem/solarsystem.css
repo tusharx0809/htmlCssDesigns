@@ -1,39 +1,37 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow-y: scroll;
-    margin-top: 150px;
-  }
-  
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 1;
-    pointer-events: none;
-  }
-  
-  .flex {
-    position: relative;
-    z-index: 2; /* Ensure content is above the overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-y: scroll;
+  margin-top: 150px;
+}
 
-  
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flex {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+}
 
 .sun {
   position: absolute;
@@ -70,9 +68,8 @@ body {
   transition: transform 0.5s ease-out;
 }
 .planet-icon:hover {
-    transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
 }
-
 
 /* Orbit sizes and animation durations */
 .neptune {
