@@ -1,0 +1,112 @@
+body {
+    background: radial-gradient(circle, #000000 30%, #1a1a1a 100%);
+    /* background-image: url('background.jpg'); */
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll; 
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.neptune {
+    height: 1900px;  
+    width: 2100px;  
+    border-radius: 50%;
+    border: 0.5px solid rgb(226, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.uranus {
+    height: 1700px; 
+    width: 1900px;   
+    border-radius: 50%;
+    border: 0.5px solid rgb(226, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saturn {
+    height: 1500px;  
+    width: 1700px;   
+    border-radius: 50%;
+    border: 0.5px solid rgb(226, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jupiter {
+    height: 1300px;  
+    width: 1500px;   
+    border-radius: 50%;
+    border: 0.5px solid rgb(226, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mars {
+    height: 1100px;   
+    width: 1300px;   
+    border-radius: 50%;
+    border: 0.5px solid rgb(226, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth {
+    height: 900px;   
+    width: 1100px;    
+    border-radius: 50%;
+    border: 0.5px solid rgb(226, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.venus {
+    height: 700px;   
+    width: 900px;    
+    border-radius: 50%;
+    border: 0.5px solid rgb(226, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mercury {
+    height: 500px;   
+    width: 700px;    
+    border-radius: 50%;
+    border: 0.5px solid rgb(226, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sun {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 80px 10px rgba(255, 81, 0, 0.815);
+    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out; /* Adding transition for both scale and shadow */
+}
+
+.sun:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 0 90px 12px rgba(255, 81, 0, 1); /* Optionally, you can also modify the shadow during hover */
+}
